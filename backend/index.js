@@ -2,7 +2,6 @@ import cors from "cors";
 import express from "express";
 import { conectarDB } from "./config/db.js"; // <--- Aquí
 import comentarioRoutes from "./routes/comentarios.js";
-import mongoose from "mongoose";
 
 const app = express();
 app.use(cors());

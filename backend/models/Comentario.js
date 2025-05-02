@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const comentarioSchema = new mongoose.Schema({
   producto_id: String,
@@ -6,9 +6,8 @@ const comentarioSchema = new mongoose.Schema({
   comentario: String,
   calificacion: Number,
   fecha: Date,
-  pais: String
+  pais: String,
 });
 
-const Comentario = mongoose.model('Comentario', comentarioSchema);
-
+const Comentario = mongoose.model("Comentario", comentarioSchema);
 export default Comentario;
