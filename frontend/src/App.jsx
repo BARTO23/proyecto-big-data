@@ -2,6 +2,7 @@ import { useState } from 'react';
 import BotonGenerar from './components/BotonGenerar';
 import BotonConsultar from './components/BotonConsultar';
 import TablaComentarios from './components/TablaComentarios';
+import GraficosComentarios from './components/GraficosComentarios';
 
 function App() {
   const [datos, setDatos] = useState([]);
@@ -12,6 +13,7 @@ function App() {
       <BotonGenerar />
       <BotonConsultar setDatos={setDatos} />
       <TablaComentarios datos={datos} />
+      {datos.length > 0 && <GraficosComentarios datos={datos} />}
     </div>
   );
 }
