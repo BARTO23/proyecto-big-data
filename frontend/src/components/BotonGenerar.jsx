@@ -5,7 +5,7 @@ function BotonGenerar() {
   };
 
   return (
-    <button className="bg-blue-500 text-white p-2 m-2" onClick={generarComentarios}>
+    <button className="bg-blue-500 text-white p-2 m-2 cursor-pointer" onClick={generarComentarios}>
       Generar Comentarios
     </button>
   );
