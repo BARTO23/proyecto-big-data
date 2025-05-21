@@ -8,8 +8,8 @@ function App() {
   const [datos, setDatos] = useState([]);
 
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">
+    <div className="p-6 bg-slate-700">
+      <h1 className="text-2xl font-bold mb-4 text-white">
         Proyecto Big Data - Comentarios
       </h1>
       <div className="flex flex-col sm:flex-row gap-4">
